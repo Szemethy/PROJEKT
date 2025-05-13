@@ -1,0 +1,22 @@
+body {
+  background-color: #000000;
+}
+
+.font, .header, ul {
+  font-family: "Roboto", Sans-serif, Arial;
+  color: white;
+  list-style: none;
+}
+
+.header, ul {
+  background-color: #404040;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

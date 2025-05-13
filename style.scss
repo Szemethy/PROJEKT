@@ -1,0 +1,36 @@
+$fontColorOrange: #DDA500;
+$fontColorWhite: white;
+$backgroundColor: #1b2224;
+// $header: #5A5A5D;
+$jazzFont: 'Roboto', Sans-serif, Arial;
+$navBackground: #404040;
+$bg: #000000;
+
+body {
+    background-color: $bg;
+}
+
+.font {
+    font-family: $jazzFont;
+    color: $fontColorWhite;
+    list-style: none;
+    
+}
+
+.header {   
+    @extend .font;
+    background-color: $navBackground;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // align-items: center;    
+}
+
+ul {
+    @extend .header;    
+    @extend .font;
+
+     padding: 0;
+     
+    
+}

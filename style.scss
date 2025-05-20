@@ -7,30 +7,75 @@ $navBackground: #404040;
 $bg: #000000;
 
 body {
-    background-color: $bg;
+    background-color: $backgroundColor;
+    margin: 0;
+    padding: 0;
+    // height: 100vh;
 }
 
-.font {
-    font-family: $jazzFont;
-    color: $fontColorWhite;
-    list-style: none;
-    
-}
-
-.header {   
-    @extend .font;
-    background-color: $navBackground;
-    width: 100%;
+.centered {
     display: flex;
+    // height: auto;
     justify-content: center;
-    // align-items: center;    
+    align-items: center;
+    flex-direction: column;
+
+
 }
 
-ul {
-    @extend .header;    
-    @extend .font;
-
-     padding: 0;
-     
-    
+h1 {
+    color: $fontColorOrange;
+    font-family: $jazzFont;
+    font-size: 100px;
 }
+
+.button {
+    background-color: $fontColorOrange;
+    color: $bg;
+    font-family: $jazzFont;
+    padding: 20px 100px;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($fontColorOrange, 10%);
+        color: $fontColorWhite;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: $navBackground;
+    gap: 20px;
+
+    @extend .centered;
+    flex-direction: row;    
+}
+
+.header a {
+    color: $fontColorWhite;
+    font-family: $jazzFont;
+    text-decoration: none;
+
+   
+    height: 50px;
+    width: 100px;
+    background-color: $backgroundColor;
+
+    @extend .centered;
+    flex-direction: row; 
+
+     &:hover {
+        background-color: darken($fontColorOrange, 10%);
+        color: $fontColorWhite;
+    }
+}
+
+
+
+
+
+

@@ -17,7 +17,7 @@ body {
     display: flex;
     // height: auto;
     justify-content: center;
-    align-items: center;
+    align-items: center;
     flex-direction: column;
 
 
@@ -32,8 +32,9 @@ h1 {
 h2 {
     @extend h1;
     font-size: x-large;
-    display: none;
-    float: left;
+    margin-top: 50px;
+  
+    
 }
 
 .button {
@@ -94,6 +95,22 @@ h2 {
     height: 4px;
     background-color: $navBackground;
     border-radius: 2px;
+}
+
+.squares {
+    // @extend .centered;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.squares div{
+    width: 500px;
+    height: 200px;
+    background-color: $navBackground;
+    border: solid 1px;
+    
 }
 
 

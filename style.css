@@ -11,10 +11,16 @@ body {
   flex-direction: column;
 }
 
-h1 {
+h1, .quote, h2 {
   color: #DDA500;
   font-family: "Roboto", Sans-serif, Arial;
   font-size: 100px;
+}
+
+h2 {
+  font-size: x-large;
+  display: none;
+  float: left;
 }
 
 .button {
@@ -52,6 +58,19 @@ h1 {
 .header a:hover {
   background-color: rgb(170, 126.9230769231, 0);
   color: white;
+}
+
+.quote {
+  width: 75%;
+  color: white;
+  font-size: xx-large;
+}
+
+.separator {
+  width: 75%;
+  height: 4px;
+  background-color: #404040;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

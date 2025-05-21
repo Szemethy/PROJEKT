@@ -29,6 +29,13 @@ h1 {
     font-size: 100px;
 }
 
+h2 {
+    @extend h1;
+    font-size: x-large;
+    display: none;
+    float: left;
+}
+
 .button {
     background-color: $fontColorOrange;
     color: $bg;
@@ -72,6 +79,21 @@ h1 {
         background-color: darken($fontColorOrange, 10%);
         color: $fontColorWhite;
     }
+}
+
+.quote {
+    @extend h1;
+    width: 75%;
+    color: $fontColorWhite;
+    font-size: xx-large;
+    
+}
+
+.separator {
+    width: 75%;
+    height: 4px;
+    background-color: $navBackground;
+    border-radius: 2px;
 }
 
 

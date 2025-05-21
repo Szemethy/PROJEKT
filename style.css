@@ -1,76 +1,17 @@
-body {
-  background-color: #1b2224;
-  margin: 0;
-  padding: 0;
-}
+/* Error: expected ";".
+ *    ,
+ * 21 |     flex-direction: column;
+ *    |                   ^
+ *    '
+ *   style.scss 21:19  root stylesheet */
 
-.centered, .header a, .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 21 \2502      flex-direction: column;\d\a    \2502                    ^\a    \2575 \a   style.scss 21:19  root stylesheet';
 }
-
-h1, .quote, h2 {
-  color: #DDA500;
-  font-family: "Roboto", Sans-serif, Arial;
-  font-size: 100px;
-}
-
-h2 {
-  font-size: x-large;
-  display: none;
-  float: left;
-}
-
-.button {
-  background-color: #DDA500;
-  color: #000000;
-  font-family: "Roboto", Sans-serif, Arial;
-  padding: 20px 100px;
-  text-decoration: none;
-  font-size: 24px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-.button:hover {
-  background-color: rgb(170, 126.9230769231, 0);
-  color: white;
-}
-
-.header {
-  width: 100%;
-  height: 50px;
-  background-color: #404040;
-  gap: 20px;
-  flex-direction: row;
-}
-
-.header a {
-  color: white;
-  font-family: "Roboto", Sans-serif, Arial;
-  text-decoration: none;
-  height: 50px;
-  width: 100px;
-  background-color: #1b2224;
-  flex-direction: row;
-}
-.header a:hover {
-  background-color: rgb(170, 126.9230769231, 0);
-  color: white;
-}
-
-.quote {
-  width: 75%;
-  color: white;
-  font-size: xx-large;
-}
-
-.separator {
-  width: 75%;
-  height: 4px;
-  background-color: #404040;
-  border-radius: 2px;
-}
-
-/*# sourceMappingURL=style.css.map */

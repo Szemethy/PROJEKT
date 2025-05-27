@@ -4,14 +4,14 @@ body {
   padding: 0;
 }
 
-.centered, .header a, .header {
+.centered, .squares div, .header a, .header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-h1, .quote, h2 {
+h1, .quote, h3, h2 {
   color: #DDA500;
   font-family: "Roboto", Sans-serif, Arial;
   font-size: 100px;
@@ -20,6 +20,16 @@ h1, .quote, h2 {
 h2 {
   font-size: x-large;
   margin-top: 50px;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+p {
+  color: white;
+  font-family: "Roboto", Sans-serif, Arial;
+  font-size: 25px;
 }
 
 .button {
@@ -77,6 +87,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 80px;
 }
 
 .squares div {
@@ -84,6 +95,59 @@ h2 {
   height: 200px;
   background-color: #404040;
   border: solid 1px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #1b2224;
+  color: #DDA500;
+  padding: 30px 15px;
+  font-family: "Roboto", Sans-serif, Arial;
+  font-size: large;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-section a {
+  color: #DDA500;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section.social a img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.2);
+  fill: #b78c00;
 }
 
 /*# sourceMappingURL=style.css.map */

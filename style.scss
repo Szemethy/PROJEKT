@@ -32,8 +32,18 @@ h1 {
 h2 {
     @extend h1;
     font-size: x-large;
-    margin-top: 50px;
-  
+    margin-top: 50px;  
+}
+
+h3 {
+    @extend h1;
+    font-size: x-large;
+}
+
+p {
+    color: $fontColorWhite;
+    font-family: $jazzFont;
+    font-size: 25px;
     
 }
 
@@ -103,6 +113,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 80px;
 }
 
 .squares div{
@@ -110,11 +121,62 @@ h2 {
     height: 200px;
     background-color: $navBackground;
     border: solid 1px;
-    
+    @extend .centered;
+    text-align: center;
 }
 
 
 
+.footer {
+  background-color: $backgroundColor;
+  color: $fontColorOrange;
+  padding: 30px 15px;
+  font-family: $jazzFont;
+  font-size: large;
+  margin-top: 50px;
+}
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-section a {
+  color: $fontColorOrange;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section.social a img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.2);
+  fill: #b78c00;
+}
 
 

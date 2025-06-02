@@ -19,8 +19,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
 
-
+.jazzstars {
+  @extend .centered;
+  width: 75%;
 }
 
 h1 {
@@ -180,3 +183,201 @@ p {
 }
 
 
+
+
+// // === Változók ===
+// $fontColorOrange: #DDA500;
+// $fontColorWhite: white;
+// $backgroundColor: #1b2224;
+// $navBackground: #404040;
+// $bg: #000000;
+// $jazzFont: 'Roboto', Sans-serif, Arial;
+
+// // === Mixinek ===
+// @mixin centered($dir: column) {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: $dir;
+// }
+
+// @mixin heading($size) {
+//   color: $fontColorOrange;
+//   font-family: $jazzFont;
+//   font-size: $size;
+// }
+
+// // === Placeholderek ===
+// %centered-column {
+//   @include centered(column);
+// }
+
+// %centered-row {
+//   @include centered(row);
+// }
+
+// %heading {
+//   color: $fontColorOrange;
+//   font-family: $jazzFont;
+// }
+
+// // === Alapstílusok ===
+// body {
+//   background-color: $backgroundColor;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .centered {
+//   @extend %centered-column;
+// }
+
+// .jazzstars {
+//   @extend %centered-column;
+//   width: 75%;
+// }
+
+// h1 {
+//   @extend %heading;
+//   font-size: 100px;
+// }
+
+// h2, h3 {
+//   @extend h1;
+//   font-size: x-large;
+//   margin-top: 50px;
+// }
+
+// p {
+//   color: $fontColorWhite;
+//   font-family: $jazzFont;
+//   font-size: 25px;
+// }
+
+// // === Gomb ===
+// .button {
+//   background-color: $fontColorOrange;
+//   color: $bg;
+//   font-family: $jazzFont;
+//   padding: 20px 100px;
+//   text-decoration: none;
+//   font-size: 24px;
+//   border-radius: 4px;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: darken($fontColorOrange, 10%);
+//     color: $fontColorWhite;
+//   }
+// }
+
+// // === Fejléc ===
+// .header {
+//   width: 100%;
+//   height: 50px;
+//   background-color: $navBackground;
+//   gap: 20px;
+//   @extend %centered-row;
+
+//   a {
+//     color: $fontColorWhite;
+//     font-family: $jazzFont;
+//     text-decoration: none;
+//     height: 50px;
+//     width: 100px;
+//     background-color: $backgroundColor;
+//     @extend %centered-row;
+
+//     &:hover {
+//       background-color: darken($fontColorOrange, 10%);
+//       color: $fontColorWhite;
+//     }
+//   }
+// }
+
+// // === Idézet ===
+// .quote {
+//   @extend h1;
+//   color: $fontColorWhite;
+//   width: 75%;
+//   font-size: xx-large;
+// }
+
+// // === Elválasztó ===
+// .separator {
+//   width: 75%;
+//   height: 4px;
+//   background-color: $navBackground;
+//   border-radius: 2px;
+// }
+
+// // === Négyzetek ===
+// .squares {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   gap: 10px;
+//   margin-bottom: 80px;
+
+//   div {
+//     width: 500px;
+//     height: 200px;
+//     background-color: $navBackground;
+//     border: solid 1px;
+//     @extend %centered-column;
+//     text-align: center;
+//   }
+// }
+
+// // === Lábléc ===
+// .footer {
+//   background-color: $backgroundColor;
+//   color: $fontColorOrange;
+//   padding: 30px 15px;
+//   font-family: $jazzFont;
+//   font-size: large;
+//   margin-top: 50px;
+
+//   &-container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     gap: 20px;
+//   }
+
+//   &-section {
+//     flex: 1 1 200px;
+//     min-width: 200px;
+
+//     a {
+//       color: $fontColorOrange;
+//       text-decoration: none;
+//       margin-left: 10px;
+
+//       &:hover {
+//         text-decoration: underline;
+//       }
+
+//       &.social img {
+//         width: 24px;
+//         height: 24px;
+//         vertical-align: middle;
+//         margin-left: 10px;
+//       }
+//     }
+//   }
+
+//   .social-icon {
+//     display: inline-block;
+//     margin-left: 10px;
+//     vertical-align: middle;
+//     transition: transform 0.3s ease;
+
+//     &:hover svg {
+//       transform: scale(1.2);
+//       fill: #b78c00;
+//     }
+//   }
+// }

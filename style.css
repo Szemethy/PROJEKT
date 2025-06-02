@@ -4,11 +4,15 @@ body {
   padding: 0;
 }
 
-.centered, .squares div, .header a, .header {
+.centered, .squares div, .header a, .header, .jazzstars {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.jazzstars {
+  width: 75%;
 }
 
 h1, .quote, h3, h2 {

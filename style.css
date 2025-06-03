@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.centered, .squares div, .header a, .header, .jazzstars {
+.centered, .squares div, .audiomp3, .header a, .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,22 +12,24 @@ body {
 }
 
 .jazzstars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 75%;
 }
 
-h1, .quote, h3, h2 {
+h1, .quote {
   color: #DDA500;
   font-family: "Roboto", Sans-serif, Arial;
   font-size: 100px;
 }
 
-h2 {
-  font-size: x-large;
+h2, h3 {
+  color: #DDA500;
+  font-family: "Roboto", Sans-serif, Arial;
+  font-size: xx-large;
   margin-top: 50px;
-}
-
-h3 {
-  font-size: x-large;
 }
 
 p {
@@ -79,6 +81,15 @@ p {
   font-size: xx-large;
 }
 
+audio::-webkit-media-controls-panel {
+  background-color: #DDA500;
+}
+
+.audiomp3 {
+  width: 75%;
+  flex-wrap: nowrap;
+}
+
 .separator {
   width: 75%;
   height: 4px;
@@ -106,11 +117,10 @@ p {
   background-color: #1b2224;
   color: #DDA500;
   padding: 30px 15px;
-  font-family: "Roboto", Sans-serif, Arial;
   font-size: large;
   margin-top: 50px;
+  font-family: "Roboto", Sans-serif, Arial;
 }
-
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -119,37 +129,31 @@ p {
   justify-content: space-between;
   gap: 20px;
 }
-
 .footer-section {
   flex: 1 1 200px;
   min-width: 200px;
 }
-
 .footer-section a {
   color: #DDA500;
   text-decoration: none;
   margin-left: 10px;
 }
-
 .footer-section a:hover {
   text-decoration: underline;
 }
-
-.footer-section.social a img {
+.footer-section a.social img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
   margin-left: 10px;
 }
-
-.social-icon {
+.footer .social-icon {
   display: inline-block;
   margin-left: 10px;
   vertical-align: middle;
   transition: transform 0.3s ease;
 }
-
-.social-icon:hover svg {
+.footer .social-icon:hover svg {
   transform: scale(1.2);
   fill: #b78c00;
 }

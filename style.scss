@@ -30,13 +30,13 @@ body {
   @include centered(column);
 }
 
-// .centered {
-//   display: flex;
-//   // height: auto;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-// }
+.centered {
+  display: flex;
+  // height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 
 

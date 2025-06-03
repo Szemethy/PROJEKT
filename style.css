@@ -11,6 +11,13 @@ body {
   flex-direction: column;
 }
 
+.centered, .squares div, .audiomp3, .header a, .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .jazzstars {
   display: flex;
   justify-content: center;
